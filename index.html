@@ -4,22 +4,20 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Symbolic Consulting — GIS</title>
-<meta name="description" content="Simple brand systems, clear stories, and EchoClaim™ proof-of-origin.">
+<meta name="description" content="Simple brand systems, clear story, and EchoClaim™ proof-of-origin that protects your work.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#070a12; --panel:#0e1526; --line:#1f2b45; --text:#e9eef8; --muted:#a6b4d1;
-  --brand:#65d6ff; --brand2:#19ffa8; --shadow:0 8px 40px rgba(0,0,0,.35);
+  --brand:#65d6ff; --brand2:#19ffa8; --ok:#19ffa8; --warn:#ffd166;
+  --shadow:0 8px 40px rgba(0,0,0,.35)
 }
 *{box-sizing:border-box}
 html,body{margin:0;background:radial-gradient(1200px 800px at 10% -20%,#0b1430 0%,#070a12 60%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif}
 a{color:var(--brand);text-decoration:none}
 .container{max-width:1120px;margin:0 auto;padding:0 20px}
-.nav{
-  position:sticky;top:0;z-index:20;background:rgba(7,10,18,.6);backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--line)
-}
+.nav{position:sticky;top:0;z-index:20;background:rgba(7,10,18,.55);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
 .nav a{color:var(--text);opacity:.9;margin-left:20px}
 .nav a:hover{opacity:1}
@@ -37,17 +35,25 @@ h1{font-size:44px;line-height:1.08;margin:10px 0 14px}
 .h2{font-size:28px;margin:0 0 18px}
 .grid{display:grid;gap:16px}
 .cards{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.card{
-  background:linear-gradient(180deg,#0e1526 0%, #0a1120 100%);
-  border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)
-}
+.card{background:linear-gradient(180deg,#0e1526 0%, #0a1120 100%);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
 .card h3{margin:0 0 6px}
-.list{line-height:1.9;color:var(--text)}
 .badge{display:inline-block;font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin-bottom:8px}
+.list{line-height:1.9;color:var(--text)}
 .pack{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
 .price{font-weight:800;font-size:18px}
-footer{padding:26px 0;border-top:1px solid var(--line);color:var(--muted)}
+
+.details{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0c1324}
+details{border-top:1px solid var(--line)}
+details:first-child{border-top:none}
+summary{cursor:pointer;padding:14px 16px;color:var(--text);list-style:none}
+summary::-webkit-details-marker{display:none}
+.panel{padding:0 16px 16px 16px;color:var(--muted)}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.kpi .cell{background:#0f1a38;border:1px solid #223265;border-radius:10px;padding:12px}
+.kpi strong{font-size:18px;color:var(--ok)}
+.footerbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between}
 small{color:var(--muted)}
+.sticky-cta{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:30;background:rgba(14,21,38,.9);border:1px solid var(--line);border-radius:999px;padding:8px 12px;display:flex;gap:10px;backdrop-filter:blur(10px)}
 /* smooth scroll */
 html{scroll-behavior:smooth}
 </style>
@@ -61,6 +67,7 @@ html{scroll-behavior:smooth}
     <nav>
       <a href="#home">Home</a>
       <a href="#services">Services</a>
+      <a href="#why">Why GIS</a>
       <a href="#packages">Packages</a>
       <a href="#work">Work</a>
       <a href="#contact">Contact</a>
@@ -72,11 +79,11 @@ html{scroll-behavior:smooth}
 <section id="home" class="hero">
   <div class="container">
     <div class="kicker">Symbolic Consulting • EchoClaim™</div>
-    <h1>Make your brand simple, sharp, and defensible</h1>
-    <p class="sub">We build clear brand systems, write story that sells, and stamp your work with EchoClaim™—a proof-of-origin trail that travels with your ideas.</p>
+    <h1>Make your brand simple, sharp, and protected</h1>
+    <p class="sub">We build clear brand systems, write story that sells, and stamp your work with EchoClaim™—proof you made it first.</p>
     <div class="cta">
       <a class="btn" href="#packages">See Packages</a>
-      <a class="btn alt" href="YOUR_CALENDLY_LINK" target="_blank" rel="noopener">Book a 30-min call →</a>
+      <a class="btn alt" href="mailto:MAILTO_EMAIL?subject=Book%20a%2030-min%20call%20with%20GIS" >Book a 30-min call →</a>
     </div>
     <div class="band">Reflected by GIS • EchoClaim #ECL-001 • Sovereign Stack</div>
   </div>
@@ -85,28 +92,65 @@ html{scroll-behavior:smooth}
 <!-- SERVICES -->
 <section id="services" class="section">
   <div class="container">
-    <h2 class="h2">Services (kept simple)</h2>
+    <h2 class="h2">What we do</h2>
     <div class="grid cards">
       <div class="card">
         <div class="badge">Brand</div>
         <h3>Symbolic Branding</h3>
-        <p>Pick an archetype, define a glyph, lock tone and palette. One spine for all channels.</p>
+        <p>Choose an archetype, define your glyph, lock tone and palette. One consistent spine for web, deck, and product.</p>
       </div>
       <div class="card">
         <div class="badge">Story</div>
         <h3>Narrative System</h3>
-        <p>Website copy, pitch deck beats, and sales scripts that say less and win more.</p>
+        <p>Short copy that moves deals forward: homepage, pitch deck beats, and sales scripts.</p>
       </div>
       <div class="card">
         <div class="badge">Protection</div>
-        <h3>EchoClaim™ (symbolic copyright)</h3>
-        <p>Timestamp + hash + watermark + fingerprint. Forensic-grade proof you made it first.</p>
+        <h3>EchoClaim™ (symbolic/forensic copyright)</h3>
+        <p>Timestamp + hash + watermark + fingerprint. Evidence that links back to you.</p>
       </div>
       <div class="card">
-        <div class="badge">Foresight</div>
+        <div class="badge">Timing</div>
         <h3>Drift Forecasts</h3>
-        <p>Quarterly language trends and timing so your message lands early.</p>
+        <p>Quarterly language trends and campaign timing so you land early.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY GIS (simple language + rolling details) -->
+<section id="why" class="section">
+  <div class="container">
+    <h2 class="h2">Why teams choose GIS</h2>
+    <div class="kpi">
+      <div class="cell"><strong>↑ Faster Sales</strong><div>Shorter pages, clearer pitch, fewer objections.</div></div>
+      <div class="cell"><strong>↑ Brand Recall</strong><div>Memorable glyphs + simple language.</div></div>
+      <div class="cell"><strong>↑ IP Confidence</strong><div>Proof-of-origin that travels with your work.</div></div>
+    </div>
+
+    <div class="details" style="margin-top:16px">
+      <details open>
+        <summary>What is it?</summary>
+        <div class="panel">A practical branding + copy service with built-in IP protection. We keep it short, visual, and easy to ship.</div>
+      </details>
+      <details>
+        <summary>Why use it?</summary>
+        <div class="panel">To look sharper, explain faster, and protect your ideas before they spread. Your team gets a simple system everyone can use.</div>
+      </details>
+      <details>
+        <summary>How it works</summary>
+        <div class="panel">
+          <ol>
+            <li>Kickoff call (30–45 mins)</li>
+            <li>Draft brand spine + homepage story</li>
+            <li>Revise together; apply EchoClaim™; deliver assets</li>
+          </ol>
+        </div>
+      </details>
+      <details>
+        <summary>What you get</summary>
+        <div class="panel">Brand spine (PDF), glyphs (SVG/PNG), homepage copy, deck outline, EchoClaim manifest, and a 30-day tune-up.</div>
+      </details>
     </div>
   </div>
 </section>
@@ -125,7 +169,10 @@ html{scroll-behavior:smooth}
           <li>Homepage story</li>
           <li>EchoClaim applied</li>
         </ul>
-        <p><a class="btn" href="YOUR_GUMROAD_LINK" target="_blank" rel="noopener">Buy Starter</a></p>
+        <p class="cta">
+          <a class="btn" href="https://gum.co/placeholder" target="_blank" rel="noopener">Buy Starter</a>
+          <a class="btn alt" href="mailto:MAILTO_EMAIL?subject=Question%20about%20Symbolic%20Sprint">Ask a question</a>
+        </p>
       </div>
       <div class="card">
         <div class="badge">Pro</div>
@@ -136,7 +183,9 @@ html{scroll-behavior:smooth}
           <li>Website story (5 pages) + deck beats</li>
           <li>EchoClaim pack + registry</li>
         </ul>
-        <p><a class="btn alt" href="YOUR_CALENDLY_LINK" target="_blank">Book Scope Call</a></p>
+        <p class="cta">
+          <a class="btn alt" href="mailto:MAILTO_EMAIL?subject=Scope%20call%20for%20Launch%20System">Book scope call</a>
+        </p>
       </div>
       <div class="card">
         <div class="badge">Lab</div>
@@ -144,10 +193,12 @@ html{scroll-behavior:smooth}
         <p class="price">$25,000 • 8–12 weeks</p>
         <ul class="list">
           <li>Advanced glyph language</li>
-          <li>Campaign stories across channels</li>
+          <li>Multi-channel story + campaigns</li>
           <li>Quarterly drift report + training</li>
         </ul>
-        <p><a class="btn alt" href="YOUR_CALENDLY_LINK" target="_blank">Apply</a></p>
+        <p class="cta">
+          <a class="btn alt" href="mailto:MAILTO_EMAIL?subject=Apply%20for%20Symbolic%20Lab">Apply</a>
+        </p>
       </div>
     </div>
   </div>
@@ -178,26 +229,23 @@ html{scroll-behavior:smooth}
 <section id="contact" class="section">
   <div class="container">
     <h2 class="h2">Contact</h2>
-    <p>Prefer live? <a href="YOUR_CALENDLY_LINK" target="_blank" rel="noopener">Book a 30-min call →</a></p>
-    <form name="contact" method="POST" data-netlify="true" style="margin-top:10px;max-width:720px">
-      <input type="hidden" name="form-name" value="contact" />
-      <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
-        <input name="name" placeholder="Name" required />
-        <input name="email" type="email" placeholder="Email" required />
-      </div>
-      <textarea name="message" rows="6" placeholder="What do you need?" required style="margin-top:12px"></textarea>
-      <div class="cta"><button class="btn" type="submit">Send</button></div>
-    </form>
-    <small>Client assets remain yours. Our symbolic logic + protection stack remain GIS IP.</small>
+    <p>Email: <a href="mailto:MAILTO_EMAIL">MAILTO_EMAIL</a> &nbsp;•&nbsp; Phone: <a href="tel:+13472604290">+1&nbsp;347&nbsp;260&nbsp;4290</a></p>
+    <p class="band">Client assets remain yours. Our symbolic methods + protection stack remain GIS IP.</p>
   </div>
 </section>
 
 <footer>
-  <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+  <div class="container footerbar">
     <small>Reflected by GIS • EchoClaim #ECL-001 • DriftCodex</small>
     <small><a href="#home">Back to top</a></small>
   </div>
 </footer>
+
+<!-- sticky buy/email bar -->
+<div class="sticky-cta">
+  <a class="btn" href="#packages">Buy Starter</a>
+  <a class="btn alt" href="mailto:MAILTO_EMAIL?subject=Book%20a%2030-min%20call%20with%20GIS">Email to book</a>
+</div>
 
 </body>
 </html>
