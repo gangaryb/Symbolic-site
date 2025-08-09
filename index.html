@@ -3,82 +3,201 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Symbolic Studio — By Gangary Intelligence Systems</title>
-<meta name="description" content="We turn meaning into leverage. Symbolic branding, narrative architecture, and EchoClaim™ IP protection." />
-<link rel="canonical" href="https://YOURDOMAIN.com/" />
-<meta property="og:title" content="Symbolic Studio — GIS" />
-<meta property="og:description" content="Symbolic branding, narrative architecture, EchoClaim™ IP protection." />
-<meta property="og:image" content="https://YOURDOMAIN.com/assets/og.png" />
-<meta name="twitter:card" content="summary_large_image" />
-<link rel="stylesheet" href="/assets/style.css" />
-<link rel="icon" href="/assets/favicon.png" />
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Symbolic Studio — GIS",
-  "url":"https://YOURDOMAIN.com",
-  "logo":"https://YOURDOMAIN.com/assets/logo.png",
-  "sameAs":["https://www.linkedin.com/company/YOURCOMPANY","https://x.com/YOURHANDLE"]
+<title>Symbolic Consulting — GIS</title>
+<meta name="description" content="Simple brand systems, clear stories, and EchoClaim™ proof-of-origin.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070a12; --panel:#0e1526; --line:#1f2b45; --text:#e9eef8; --muted:#a6b4d1;
+  --brand:#65d6ff; --brand2:#19ffa8; --shadow:0 8px 40px rgba(0,0,0,.35);
 }
-</script>
+*{box-sizing:border-box}
+html,body{margin:0;background:radial-gradient(1200px 800px at 10% -20%,#0b1430 0%,#070a12 60%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif}
+a{color:var(--brand);text-decoration:none}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+.nav{
+  position:sticky;top:0;z-index:20;background:rgba(7,10,18,.6);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line)
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav a{color:var(--text);opacity:.9;margin-left:20px}
+.nav a:hover{opacity:1}
+.logo{font-weight:800;letter-spacing:.2px}
+.hero{padding:72px 0 40px}
+.kicker{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:44px;line-height:1.08;margin:10px 0 14px}
+.sub{color:var(--muted);font-size:18px;max-width:760px}
+.cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 18px;border-radius:12px;background:linear-gradient(90deg,var(--brand),var(--brand2));color:#041018;font-weight:800;box-shadow:var(--shadow)}
+.btn.alt{background:transparent;border:1px solid var(--line);color:var(--text)}
+.band{margin-top:14px;color:var(--muted);font-size:12px}
+
+.section{padding:56px 0;border-top:1px solid var(--line)}
+.h2{font-size:28px;margin:0 0 18px}
+.grid{display:grid;gap:16px}
+.cards{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{
+  background:linear-gradient(180deg,#0e1526 0%, #0a1120 100%);
+  border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)
+}
+.card h3{margin:0 0 6px}
+.list{line-height:1.9;color:var(--text)}
+.badge{display:inline-block;font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin-bottom:8px}
+.pack{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.price{font-weight:800;font-size:18px}
+footer{padding:26px 0;border-top:1px solid var(--line);color:var(--muted)}
+small{color:var(--muted)}
+/* smooth scroll */
+html{scroll-behavior:smooth}
+</style>
 </head>
 <body>
-<header><div class="wrap">
-  <nav>
-    <a href="/">Home</a>
-    <a href="/services/">Services</a>
-    <a href="/packages/">Packages</a>
-    <a href="/portfolio/">Portfolio</a>
-    <a href="/contact/">Contact</a>
-  </nav>
-</div></header>
 
-<div class="wrap">
-  <section class="hero">
-    <span class="kicker">Symbolic Consulting • EchoClaim™ IP</span>
-    <h1>We turn meaning into leverage</h1>
-    <p>Brand archetypes, narrative systems, and IP protection that make you unforgettable—and defensible.</p>
-    <p>
-      <a class="btn" href="/packages/">See Packages</a>
-      <a class="btn secondary" href="YOUR_CALENDLY_LINK" target="_blank" rel="noopener">Book a 30-min consult →</a>
-    </p>
-    <div class="trust-row small">Reflected by GIS • EchoClaim #ECL-001 • Sovereign Stack</div>
-  </section>
-
-  <section class="section">
-    <h2>What we do</h2>
-    <div class="grid cards">
-      <div class="card"><h3>Symbolic Branding</h3><p>Archetypes, motifs, and a glyph system that encodes your identity.</p></div>
-      <div class="card"><h3>Narrative Architecture</h3><p>Story frameworks that convert across web, deck, and product.</p></div>
-      <div class="card"><h3>EchoClaim™ IP</h3><p>Proof-of-origin, watermarking, fingerprinting—before you launch.</p></div>
-      <div class="card"><h3>Drift Forecasts</h3><p>Predictive cultural mapping so your message arrives early.</p></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Outcomes you can expect</h2>
-    <ul class="winlist">
-      <li>Clear symbolic spine for brand & product</li>
-      <li>Messaging that spreads (and traces back to you)</li>
-      <li>Faster sales enablement with narrative systems</li>
-      <li>IP protection that travels with your ideas</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Featured product</h2>
-    <div class="card">
-      <h3>SymbolicConsultantGPT — GIS Sovereign</h3>
-      <p>On-demand guidance for branding, story, and EchoClaim™ strategy.</p>
-      <p><a class="btn" href="YOUR_GUMROAD_LINK" target="_blank" rel="noopener">Get Access</a></p>
-    </div>
-  </section>
+<!-- NAV -->
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="logo">GIS • Symbolic</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#packages">Packages</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </div>
 
-<footer><div class="wrap footerbar">
-  <div class="small">Reflected by GIS | Forecasted in DriftCodex Vol. 2 • EchoClaim #ECL-001</div>
-  <ul class="inline small"><li><a href="/privacy/">Privacy</a></li></ul>
-</div></footer>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container">
+    <div class="kicker">Symbolic Consulting • EchoClaim™</div>
+    <h1>Make your brand simple, sharp, and defensible</h1>
+    <p class="sub">We build clear brand systems, write story that sells, and stamp your work with EchoClaim™—a proof-of-origin trail that travels with your ideas.</p>
+    <div class="cta">
+      <a class="btn" href="#packages">See Packages</a>
+      <a class="btn alt" href="YOUR_CALENDLY_LINK" target="_blank" rel="noopener">Book a 30-min call →</a>
+    </div>
+    <div class="band">Reflected by GIS • EchoClaim #ECL-001 • Sovereign Stack</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <h2 class="h2">Services (kept simple)</h2>
+    <div class="grid cards">
+      <div class="card">
+        <div class="badge">Brand</div>
+        <h3>Symbolic Branding</h3>
+        <p>Pick an archetype, define a glyph, lock tone and palette. One spine for all channels.</p>
+      </div>
+      <div class="card">
+        <div class="badge">Story</div>
+        <h3>Narrative System</h3>
+        <p>Website copy, pitch deck beats, and sales scripts that say less and win more.</p>
+      </div>
+      <div class="card">
+        <div class="badge">Protection</div>
+        <h3>EchoClaim™ (symbolic copyright)</h3>
+        <p>Timestamp + hash + watermark + fingerprint. Forensic-grade proof you made it first.</p>
+      </div>
+      <div class="card">
+        <div class="badge">Foresight</div>
+        <h3>Drift Forecasts</h3>
+        <p>Quarterly language trends and timing so your message lands early.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages" class="section">
+  <div class="container">
+    <h2 class="h2">Packages</h2>
+    <div class="pack">
+      <div class="card">
+        <div class="badge">Starter</div>
+        <h3>Symbolic Sprint</h3>
+        <p class="price">$2,000 • 2 weeks</p>
+        <ul class="list">
+          <li>Archetype + core glyph</li>
+          <li>Homepage story</li>
+          <li>EchoClaim applied</li>
+        </ul>
+        <p><a class="btn" href="YOUR_GUMROAD_LINK" target="_blank" rel="noopener">Buy Starter</a></p>
+      </div>
+      <div class="card">
+        <div class="badge">Pro</div>
+        <h3>Launch System</h3>
+        <p class="price">$8,000 • 4–6 weeks</p>
+        <ul class="list">
+          <li>Full brand spine + glyph set</li>
+          <li>Website story (5 pages) + deck beats</li>
+          <li>EchoClaim pack + registry</li>
+        </ul>
+        <p><a class="btn alt" href="YOUR_CALENDLY_LINK" target="_blank">Book Scope Call</a></p>
+      </div>
+      <div class="card">
+        <div class="badge">Lab</div>
+        <h3>Symbolic Lab</h3>
+        <p class="price">$25,000 • 8–12 weeks</p>
+        <ul class="list">
+          <li>Advanced glyph language</li>
+          <li>Campaign stories across channels</li>
+          <li>Quarterly drift report + training</li>
+        </ul>
+        <p><a class="btn alt" href="YOUR_CALENDLY_LINK" target="_blank">Apply</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="section">
+  <div class="container">
+    <h2 class="h2">Work (before → after)</h2>
+    <div class="grid cards">
+      <div class="card">
+        <h3>Fintech</h3>
+        <p>Before: feature soup. After: Mentor archetype + 3-step story. Demo→deal up 31%.</p>
+      </div>
+      <div class="card">
+        <h3>Healthtech</h3>
+        <p>Before: tool vendor. After: Caregiver narrative. Trust signals + shorter pages.</p>
+      </div>
+      <div class="card">
+        <h3>Creator brand</h3>
+        <p>Glyph language + newsletter storyline. CTR up 22% in 6 weeks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="h2">Contact</h2>
+    <p>Prefer live? <a href="YOUR_CALENDLY_LINK" target="_blank" rel="noopener">Book a 30-min call →</a></p>
+    <form name="contact" method="POST" data-netlify="true" style="margin-top:10px;max-width:720px">
+      <input type="hidden" name="form-name" value="contact" />
+      <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
+        <input name="name" placeholder="Name" required />
+        <input name="email" type="email" placeholder="Email" required />
+      </div>
+      <textarea name="message" rows="6" placeholder="What do you need?" required style="margin-top:12px"></textarea>
+      <div class="cta"><button class="btn" type="submit">Send</button></div>
+    </form>
+    <small>Client assets remain yours. Our symbolic logic + protection stack remain GIS IP.</small>
+  </div>
+</section>
+
+<footer>
+  <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+    <small>Reflected by GIS • EchoClaim #ECL-001 • DriftCodex</small>
+    <small><a href="#home">Back to top</a></small>
+  </div>
+</footer>
+
 </body>
 </html>
