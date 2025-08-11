@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>GIS — Symbolic Marketing, EchoClaim™ & GPT SEO</title>
 <meta name="description" content="We turn ideas into protected, market-ready assets: symbolic branding, EchoClaim™ proof-of-origin, and GPT SEO so AI assistants recommend you." />
+
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
@@ -12,8 +13,8 @@
 <meta property="og:title" content="GIS — Symbolic Marketing, EchoClaim™ & GPT SEO" />
 <meta property="og:description" content="Brand systems, EchoClaim™ IP protection, and GPT SEO so ChatGPT/Claude recommend you." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://YOURDOMAIN.com/" />
-<meta property="og:image" content="https://YOURDOMAIN.com/og-image.jpg" />
+<meta property="og:url" content="https://gangaryb.github.io/Symbolic-site/" />
+<meta property="og:image" content="https://gangaryb.github.io/Symbolic-site/og-image.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 
 <style>
@@ -59,14 +60,22 @@ summary::-webkit-details-marker{display:none}
 .kpi .cell{background:#0f1a38;border:1px solid #223265;border-radius:10px;padding:12px}
 .kpi strong{font-size:18px;color:var(--ok)}
 .quote{font-style:italic;color:#dbe6ff}
-.footerbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between}
-small{color:var(--muted)}
-.sticky-cta{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:30;background:rgba(14,21,38,.9);border:1px solid var(--line);border-radius:999px;padding:8px 12px;display:flex;gap:10px;backdrop-filter:blur(10px)}
-html{scroll-behavior:smooth}
+
+/* STORE GRID */
+.store .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.store .card p{margin:.25rem 0}
+.store .btn{margin-top:8px}
+
+/* Forms & misc */
 input,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid #25345f;background:#0b1430;color:var(--text)}
 label{font-size:14px;color:var(--muted);display:block}
 .form-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
 .form-row-1{display:grid;gap:12px;grid-template-columns:1fr}
+html{scroll-behavior:smooth}
+
+/* Footer */
+.footerbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+small{color:var(--muted)}
 </style>
 
 <!-- JSON-LD: Organization + FAQ for SEO -->
@@ -75,8 +84,8 @@ label{font-size:14px;color:var(--muted);display:block}
   "@context":"https://schema.org",
   "@type":"Organization",
   "name":"Gangary Intelligence Systems",
-  "url":"https://YOURDOMAIN.com",
-  "logo":"https://YOURDOMAIN.com/logo.png",
+  "url":"https://gangaryb.github.io/Symbolic-site/",
+  "logo":"https://gangaryb.github.io/Symbolic-site/logo.png",
   "sameAs":["https://www.linkedin.com/in/YOURPROFILE","https://x.com/YOURHANDLE"],
   "contactPoint":[{"@type":"ContactPoint","contactType":"sales","telephone":"+1-347-260-4290","email":"gangaryba@gmail.com"}]
 }
@@ -88,17 +97,11 @@ label{font-size:14px;color:var(--muted);display:block}
  "mainEntity": [{
    "@type": "Question",
    "name": "What is EchoClaim™?",
-   "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "EchoClaim™ is our proof-of-origin system: timestamp, hash, watermark, and fingerprint that link your work back to you. It supports your IP claims and complements formal copyright/trademark/patents."
-   }
+   "acceptedAnswer": {"@type": "Answer","text": "EchoClaim™ is our proof-of-origin system: timestamp, hash, watermark, and fingerprint that link your work back to you. It supports your IP claims and complements formal copyright/trademark/patents."}
  },{
    "@type": "Question",
    "name": "What is GPT SEO?",
-   "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "We optimize your brand so AI assistants (ChatGPT, Claude, Gemini) recognize and recommend you. Think of it as SEO for large language models."
-   }
+   "acceptedAnswer": {"@type": "Answer","text": "We optimize your brand so AI assistants (ChatGPT, Claude, Gemini) recognize and recommend you. Think of it as SEO for large language models."}
  }]
 }
 </script>
@@ -111,6 +114,7 @@ label{font-size:14px;color:var(--muted);display:block}
     <div class="logo">GIS • Symbolic</div>
     <nav>
       <a href="#home">Home</a>
+      <a href="#store">Store</a>
       <a href="#services">Services</a>
       <a href="#why">Why GIS</a>
       <a href="#packages">Packages</a>
@@ -130,11 +134,83 @@ label{font-size:14px;color:var(--muted);display:block}
     <h1>Be remembered. Get copied less. Sell faster.</h1>
     <p class="sub">We build clear brand systems, write sales-ready story, protect your IP with EchoClaim™, and make AI assistants recommend you with GPT SEO.</p>
     <div class="cta">
-      <a class="btn" href="#packages">See Packages</a>
+      <a class="btn" href="#store">Shop Digital Products</a>
       <a class="btn alt" href="#book">Book a 30-min call →</a>
-      <a class="btn alt" href="tel:+13472604290">Call now: +1 347 260 4290</a>
     </div>
     <div class="band">Reflected by GIS • EchoClaim #ECL-001 • Sovereign Stack</div>
+  </div>
+</section>
+
+<!-- STORE -->
+<section id="store" class="section store">
+  <div class="container">
+    <h2 class="h2">GIS Product Store</h2>
+    <p class="sub" style="margin:6px 0 18px">Instant downloads, courses, and premium services. Purchases fulfilled via Gumroad.</p>
+
+    <div class="grid">
+      <!-- Symbolic Brand Pack -->
+      <div class="card">
+        <div class="badge">Download</div>
+        <h3>Symbolic Brand Pack</h3>
+        <p class="price">$199 · Instant download</p>
+        <p>Logos (SVG/PNG), glyph set, color/typography guide, social templates.</p>
+        <a class="btn" href="https://gumroad.com/l/YOUR_BRAND_PACK" target="_blank" rel="noopener">Buy on Gumroad</a>
+      </div>
+
+      <!-- Pitch Deck Kit -->
+      <div class="card">
+        <div class="badge">Download</div>
+        <h3>Pitch Deck Kit</h3>
+        <p class="price">$299 · Instant download</p>
+        <p>Investor-ready slides, narrative beats, export presets, voice guide.</p>
+        <a class="btn" href="https://gumroad.com/l/YOUR_PITCH_DECK" target="_blank" rel="noopener">Buy on Gumroad</a>
+      </div>
+
+      <!-- AI Prompt Kit -->
+      <div class="card">
+        <div class="badge">Download</div>
+        <h3>AI Prompt Kit for Entrepreneurs</h3>
+        <p class="price">$149 · Instant download</p>
+        <p>200+ prompts for offers, funnels, growth, ops, and sales scripts.</p>
+        <a class="btn" href="https://gumroad.com/l/YOUR_PROMPT_KIT" target="_blank" rel="noopener">Buy on Gumroad</a>
+      </div>
+
+      <!-- Storytelling Template Set -->
+      <div class="card">
+        <div class="badge">Download</div>
+        <h3>Storytelling Template Set</h3>
+        <p class="price">$99 · Instant download</p>
+        <p>Brand arcs, narrative frameworks, social post templates, FAQs.</p>
+        <a class="btn" href="https://gumroad.com/l/YOUR_STORY_SET" target="_blank" rel="noopener">Buy on Gumroad</a>
+      </div>
+
+      <!-- Build Your AI Brand in 7 Days -->
+      <div class="card">
+        <div class="badge">Course</div>
+        <h3>Build Your AI Brand in 7 Days</h3>
+        <p class="price">$499 · Pre-recorded</p>
+        <p>Step-by-step video program to design, launch, and publish your brand.</p>
+        <a class="btn" href="https://gumroad.com/l/YOUR_AI_BRAND_COURSE" target="_blank" rel="noopener">Buy on Gumroad</a>
+      </div>
+
+      <!-- Symbolic Intelligence Bootcamp -->
+      <div class="card">
+        <div class="badge">Live Cohort</div>
+        <h3>Symbolic Intelligence Bootcamp</h3>
+        <p class="price">$999 · Live cohort</p>
+        <p>Live training on symbolic branding, EchoClaim™, and GPT SEO.</p>
+        <a class="btn" href="https://gumroad.com/l/YOUR_BOOTCAMP" target="_blank" rel="noopener">Enroll on Gumroad</a>
+      </div>
+
+      <!-- Custom Brand & Story World Build -->
+      <div class="card">
+        <div class="badge">Premium</div>
+        <h3>Custom Brand & Story World Build</h3>
+        <p class="price">$2,500 · 1-on-1</p>
+        <p>Three-week bespoke brand system: glyphs, story spine, launch copy.</p>
+        <a class="btn" href="https://gumroad.com/l/YOUR_CUSTOM_SERVICE" target="_blank" rel="noopener">Start Project</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -219,24 +295,21 @@ label{font-size:14px;color:var(--muted);display:block}
         <h3>Symbolic Sprint</h3>
         <p class="price">$2,000 • 2 weeks</p>
         <ul class="list"><li>Archetype + core glyph</li><li>Homepage story</li><li>EchoClaim applied</li></ul>
-        <p class="cta">
-          <a class="btn" href="https://gum.co/placeholder" target="_blank" rel="noopener">Buy Starter</a>
-          <a class="btn alt" id="emailStarter" href="#">Ask a question</a>
-        </p>
+        <p class="cta"><a class="btn" href="https://gum.co/placeholder" target="_blank" rel="noopener">Buy Starter</a></p>
       </div>
       <div class="card">
         <div class="badge">Pro</div>
         <h3>Launch System</h3>
         <p class="price">$8,000 • 4–6 weeks</p>
         <ul class="list"><li>Full brand spine + glyph set</li><li>Website story (5 pages) + deck beats</li><li>EchoClaim pack + registry</li></ul>
-        <p class="cta"><a class="btn alt" id="emailPro" href="#">Book scope call</a></p>
+        <p class="cta"><a class="btn alt" href="#book">Book scope call</a></p>
       </div>
       <div class="card">
         <div class="badge">Lab</div>
         <h3>Symbolic Lab</h3>
         <p class="price">$25,000 • 8–12 weeks</p>
         <ul class="list"><li>Advanced glyph language</li><li>Multi-channel story + campaigns</li><li>Quarterly drift + training</li></ul>
-        <p class="cta"><a class="btn alt" id="emailLab" href="#">Apply</a></p>
+        <p class="cta"><a class="btn alt" href="#learn-more">Apply</a></p>
       </div>
     </div>
   </div>
@@ -247,26 +320,11 @@ label{font-size:14px;color:var(--muted);display:block}
   <div class="container">
     <h2 class="h2">Results & testimonials</h2>
     <div class="grid cards">
-      <div class="card">
-        <h3>Fintech (B2B)</h3>
-        <p>Before: feature soup. After: Mentor archetype + 3-step story. Demo→deal up 31%.</p>
-      </div>
-      <div class="card">
-        <h3>Healthtech</h3>
-        <p>Before: tool vendor. After: Caregiver narrative. Trust signals + shorter pages.</p>
-      </div>
-      <div class="card">
-        <h3>Creator brand</h3>
-        <p>Glyph language + newsletter storyline. CTR up 22% in 6 weeks.</p>
-      </div>
-      <div class="card">
-        <p class="quote">“Before GIS, our brand was invisible. Now, AI assistants actually recommend our product. Sales grew 320% in three months.”</p>
-        <strong>— L. Howard, Founder</strong>
-      </div>
-      <div class="card">
-        <p class="quote">“GPT SEO changed our funnel. We thought Google was everything—until GIS tuned us for LLMs. We’re ahead of the curve.”</p>
-        <strong>— K. Reynolds, Marketing Director</strong>
-      </div>
+      <div class="card"><h3>Fintech (B2B)</h3><p>Before: feature soup. After: Mentor archetype + 3-step story. Demo→deal up 31%.</p></div>
+      <div class="card"><h3>Healthtech</h3><p>Before: tool vendor. After: Caregiver narrative. Trust signals + shorter pages.</p></div>
+      <div class="card"><h3>Creator brand</h3><p>Glyph language + newsletter storyline. CTR up 22% in 6 weeks.</p></div>
+      <div class="card"><p class="quote">“Before GIS, our brand was invisible. Now, AI assistants actually recommend our product. Sales grew 320% in three months.”</p><strong>— L. Howard, Founder</strong></div>
+      <div class="card"><p class="quote">“GPT SEO changed our funnel. We thought Google was everything—until GIS tuned us for LLMs. We’re ahead of the curve.”</p><strong>— K. Reynolds, Marketing Director</strong></div>
     </div>
   </div>
 </section>
@@ -276,8 +334,6 @@ label{font-size:14px;color:var(--muted);display:block}
   <div class="container">
     <h2 class="h2">Learn More</h2>
     <p class="sub" style="margin:6px 0 18px">Tell us how to reach you. We’ll send a one-page plan and next steps.</p>
-
-    <!-- Netlify (data-netlify) or Formspree (swap action) -->
     <form name="learn-more" method="POST" data-netlify="true" class="card" style="padding:16px; max-width:760px">
       <input type="hidden" name="form-name" value="learn-more" />
       <div class="form-row">
@@ -295,7 +351,6 @@ label{font-size:14px;color:var(--muted);display:block}
       </div>
       <div class="cta" style="margin-top:14px">
         <button class="btn" type="submit">Send</button>
-        <a class="btn alt" id="emailLearn" href="#">Email instead</a>
       </div>
       <p class="band" style="margin-top:10px">We respond within 1 business day. Your info stays private.</p>
     </form>
@@ -311,9 +366,6 @@ label{font-size:14px;color:var(--muted);display:block}
       <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_HANDLE/30min" style="min-width:320px;height:680px;border:0"></div>
     </div>
     <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    <p class="band" style="margin-top:12px">Prefer email or phone?
-      <a id="emailBtn" href="#">Email us</a> or call <a href="tel:+13472604290">+1 347 260 4290</a>.
-    </p>
   </div>
 </section>
 
@@ -321,7 +373,7 @@ label{font-size:14px;color:var(--muted);display:block}
 <section id="contact" class="section">
   <div class="container">
     <h2 class="h2">Contact</h2>
-    <p><strong>Email:</strong> <a id="emailFooter" href="#">Send an email</a> &nbsp;•&nbsp; <strong>Phone:</strong> <a href="tel:+13472604290">+1&nbsp;347&nbsp;260&nbsp;4290</a></p>
+    <p><strong>Email:</strong> <a href="mailto:gangaryba@gmail.com">gangaryba@gmail.com</a> &nbsp;•&nbsp; <strong>Phone:</strong> <a href="tel:+13472604290">+1&nbsp;347&nbsp;260&nbsp;4290</a></p>
     <p class="band">Client assets remain yours. Our symbolic methods + protection stack remain GIS IP.</p>
   </div>
 </section>
@@ -348,30 +400,7 @@ label{font-size:14px;color:var(--muted);display:block}
   </div>
 </footer>
 
-<!-- sticky buy/email bar -->
-<div class="sticky-cta">
-  <a class="btn" href="#packages">See Packages</a>
-  <a class="btn alt" href="#learn-more">Learn More</a>
-  <a class="btn alt" href="#book">Book a Call</a>
-</div>
-
-<script>
-// Prefilled email helper — all buttons open a composed email to you
-const YOUR_EMAIL = "gangaryba@gmail.com";
-function mailto(subject, body){
-  return `mailto:${encodeURIComponent(YOUR_EMAIL)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-}
-function setEmailLink(id, subject, body){
-  const el = document.getElementById(id);
-  if (el) el.href = mailto(subject, body);
-}
-setEmailLink("emailStarter","Question about Symbolic Sprint","Hi GIS,\n\nI’m interested in the $2,000 Symbolic Sprint.\nCompany:\nWebsite:\nMain product:\nDesired launch date:\n\nThanks!");
-setEmailLink("emailPro","Scope call for Launch System","Hi GIS,\n\nWe’re exploring the $8,000 Launch System.\nTeam size:\nWebsite:\nOutcomes:\nTimeline:\n\nThanks!");
-setEmailLink("emailLab","Apply for Symbolic Lab","Hi GIS,\n\nWe’d like to apply for Symbolic Lab.\nCompany:\nWebsite:\nBudget range:\nTimeline:\n\nThanks!");
-setEmailLink("emailBtn","Book a 30-min call","Hi GIS,\n\nI’d like to book a call to get started.\n\n—");
-setEmailLink("emailFooter","Project inquiry","Hi GIS,\n\nQuick summary of our needs:\n\n—");
-setEmailLink("emailLearn","Learn More request","Hi GIS,\n\nPlease send the one-page plan and next steps.\nName:\nCompany:\nPhone:\nGoals:\n\nThanks!");
-</script>
+<!-- No sticky CTA (removed per request) -->
 
 </body>
 </html>
